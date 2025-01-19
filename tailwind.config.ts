@@ -12,6 +12,13 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      backgroundImage: {
+        'main-bg': "url('/jpg/mainBg.jpg')",
+      },
+      fontFamily: {
+        montserrat: ['"Montserrat"', 'sans-serif'],
+        raleway: ['"Raleway"', 'sans-serif'],
+      },
     },
   },
   plugins: [],

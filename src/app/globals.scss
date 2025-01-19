@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('./fonts/Montserrat-Medium.woff2') format('woff2');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Montserrat';
+	src: url('./fonts/Montserrat-Bold.woff2') format('woff2');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Montserrat';
+	src: url('./fonts/Montserrat-Black.woff2') format('woff2');
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Raleway';
+	src: url('./fonts/Raleway-Black.woff2') format('woff2');
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #000;
+}
+
+body {
+  color: var(--background);
+  background: var(--foreground);
+  font-family: Montserrat, Raleway, sans-serif;
+}
+
+@mixin fluid-text($max: 56, $min: 32) {
+	font-size: clamp(#{$min}px, #{$max / 1920 * 100}vw, #{$max}px);
+}
+
+h1,
+.h1 {
+	@include fluid-text(56, 32);
+	font-weight: 300;
+}
+
+h2,
+.h2 {
+	@include fluid-text(44, 26);
+	font-weight: 300;
+}
+
+h3,
+.h3 {
+	@include fluid-text(36, 21);
+	font-weight: 300;
+}
+h4,
+.h4 {
+	@include fluid-text(20, 17);
+	font-weight: 300;
+}
+
+p,
+.p {
+	@include fluid-text(18, 14);
+	font-weight: 300;
+}
