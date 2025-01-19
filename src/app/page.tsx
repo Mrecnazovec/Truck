@@ -1,21 +1,29 @@
+import { Card } from './components/card/Card'
+import { Advant } from './components/sections/Advant'
+import { Banner } from './components/sections/Banner'
 import { Container } from './components/ui/Container'
+import { Fluid } from './components/ui/Fluid'
 import { LinkItem } from './components/ui/LinkItem'
+import { Title } from './components/ui/Title'
 
 export default function Home() {
 	return (
-		<div className='bg-main-bg h-screen bg-cover bg-center flex items-center justify-center'>
-			<Container>
-				<div className='flex items-center justify-center flex-col'>
-					<p className='h4 mb-4 text-center'>
-						Транспортная компания - <span className='font-bold'>Циркон</span>
-					</p>
-					<h1 className='mb-4 text-center sm:max-w-[90%]'>Доставляем гигантов мира: перевозка негабаритных грузов без ограничений.</h1>
-					<p className='h4 mb-8 lg:mb-24 md:mb-16 sm:mb-10 text-center'>Работаем по Китаю, России и странам СНГ</p>
-					<LinkItem className='md:px-24 md:py-5' href='/form'>
-						Оставить заявку
-					</LinkItem>
-				</div>
-			</Container>
-		</div>
+		<main>
+			<Banner />
+			<section className='mb-24'>
+				<Container>
+					<Title>О нас</Title>
+					<Fluid>
+						<p className='h3 mb-8'>
+							Мы — команда единомышленников, объединенных страстью к профессии и стремлением к совершенству. Наша миссия — обеспечивать безопасные,
+							надежные и оперативные перевозки грузов. Мы не просто выполняем заказы, мы создаем уникальные решения, которые выводят наших клиентов на
+							новый уровень.
+						</p>
+						<LinkItem href='/about'>Читать далее</LinkItem>
+					</Fluid>
+				</Container>
+			</section>
+			<Advant />
+		</main>
 	)
 }

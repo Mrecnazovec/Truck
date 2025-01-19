@@ -13,7 +13,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang='ru'>
-			<body>
+			<body className='pb-28'>
 				<Navbar />
 				{children}
 			</body>
