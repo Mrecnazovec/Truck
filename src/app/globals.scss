@@ -4,6 +4,14 @@
 
 @font-face {
 	font-family: 'Montserrat';
+	src: url('./fonts/Montserrat-Light.woff2') format('woff2');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Montserrat';
 	src: url('./fonts/Montserrat-Medium.woff2') format('woff2');
 	font-weight: 500;
 	font-style: normal;
@@ -32,18 +40,30 @@
 }
 
 :root {
-  --background: #ffffff;
-  --foreground: #000;
+	--background: #ffffff;
+	--foreground: #000;
 }
 
 body {
-  color: var(--background);
-  background: var(--foreground);
-  font-family: Montserrat, Raleway, sans-serif;
+	color: var(--background);
+	background: var(--foreground);
+	font-family: Montserrat, Raleway, sans-serif;
 }
 
 @mixin fluid-text($max: 56, $min: 32) {
 	font-size: clamp(#{$min}px, #{$max / 1920 * 100}vw, #{$max}px);
+}
+.visually-hidden {
+	position: absolute !important;
+	width: 1px !important;
+	height: 1px !important;
+	margin: -1px !important;
+	border: 0 !important;
+	padding: 0 !important;
+	white-space: nowrap !important;
+	clip-path: inset(100%) !important;
+	clip: rect(0 0 0 0) !important;
+	overflow: hidden !important;
 }
 
 h1,
