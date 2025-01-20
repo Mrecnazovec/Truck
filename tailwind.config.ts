@@ -15,6 +15,7 @@ export default {
       },
       backgroundImage: {
         'main-bg': "url('/jpg/mainBg.jpg')",
+        'promo-bg-1': "url('/jpg/bg-promo-1.jpg')",
       },
       fontFamily: {
         montserrat: ['"Montserrat"', 'sans-serif'],

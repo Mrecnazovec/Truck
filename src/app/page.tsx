@@ -7,6 +7,8 @@ import { LinkItem } from './components/ui/LinkItem'
 import { Title } from './components/ui/Title'
 import { Service } from './components/sections/Service'
 import Steps from './components/sections/Steps'
+import Marquee from './components/Marquee'
+import { Promo } from './components/sections/Promo'
 
 export default function Home() {
 	return (
@@ -42,6 +44,13 @@ export default function Home() {
 			</section>
 			<Service />
 			<Steps />
+			<section className='mb-24'>
+				<Container>
+					<Title>Наши партнёры</Title>
+				</Container>
+				<Marquee/>
+			</section>
+			<Promo title='Мы профессионалы в сфере транспортировки негабаритных грузов!' desc='Заполните заявку, и наш менеджер свяжется с вами в кратчайшие сроки.' imgSrc='/svg/promo-bg-1.svg'></Promo>
 		</main>
 	)
 }

@@ -4,7 +4,7 @@ import { Title } from '../ui/Title'
 
 export default function Steps() {
 	return (
-		<Container>
+		<Container className='mb-24'>
 			<Title>Этапы работы с нами</Title>
 			<Fluid>
 				<div className='md:flex md:gap-12 gap-8 grid grid-cols-2 bg-black text-white rounded-lg'>
