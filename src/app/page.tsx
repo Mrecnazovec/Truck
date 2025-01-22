@@ -9,6 +9,7 @@ import { Service } from './components/sections/Service'
 import Steps from './components/sections/Steps'
 import Marquee from './components/Marquee'
 import { Promo } from './components/sections/Promo'
+import { Form } from './components/sections/Form'
 
 export default function Home() {
 	return (
@@ -51,6 +52,7 @@ export default function Home() {
 				<Marquee/>
 			</section>
 			<Promo title='Мы профессионалы в сфере транспортировки негабаритных грузов!' desc='Заполните заявку, и наш менеджер свяжется с вами в кратчайшие сроки.' imgSrc='/svg/promo-bg-1.svg'></Promo>
+			<Form/>
 		</main>
 	)
 }
