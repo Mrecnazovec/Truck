@@ -1,6 +1,6 @@
-import { NextApiRequest } from "next";
+import { NextRequest } from "next/server";
 
-export async function POST(req: NextApiRequest) {
+export async function POST(req: NextRequest) {
   try {
     const { message } = await req.json();
     const token = process.env.TELEGRAM_BOT_TOKEN;
