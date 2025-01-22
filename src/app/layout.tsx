@@ -13,8 +13,8 @@ export default function RootLayout({
 	children: React.ReactNode
 }>) {
 	return (
-		<html lang='ru'>
-			<body className='pb-28 overflow-x-hidden'>
+		<html className='overflow-x-hidden' lang='ru'>
+			<body className='pb-24 overflow-x-hidden'>
 				<Navbar />
 				{children}
 				<Footer />
