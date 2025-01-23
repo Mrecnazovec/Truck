@@ -42,13 +42,16 @@ const Navbar: React.FC = () => {
 					}`}
 				></div>
 				<nav className='flex justify-between items-center text-white'>
-					<Logo />
+					<Logo onClick={closeMenu}/>
 					<ul className='hidden sm:flex gap-8 sm:translate-x-0'>
 						<li className='hover:opacity-70 transition-all'>
 							<Link href='/about'>О нас</Link>
 						</li>
 						<li className='hover:opacity-70 transition-all'>
 							<Link href='/services'>Услуги</Link>
+						</li>
+						<li className='hover:opacity-70 transition-all'>
+							<Link href='/contacts'>Контакты</Link>
 						</li>
 						<li>
 							<LinkItem href='/form'>Оставить заявку</LinkItem>
@@ -74,9 +77,14 @@ const Navbar: React.FC = () => {
 								О нас
 							</Link>
 						</li>
-						<li className='p-4 border-b border-gray-700 text-center mb-6'>
+						<li className='p-4 border-b border-gray-700 text-center'>
 							<Link href='/services' onClick={closeMenu}>
 								Услуги
+							</Link>
+						</li>
+						<li className='p-4 border-b border-gray-700 text-center mb-6'>
+							<Link href='/contacts' onClick={closeMenu}>
+								Контакты
 							</Link>
 						</li>
 						<li className='text-center'>

@@ -14,7 +14,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html className='overflow-x-hidden' lang='ru'>
-			<body className='pb-24 overflow-x-hidden'>
+			<body className='pb-24 overflow-x-hidden min-h-screen flex flex-col'>
 				<Navbar />
 				{children}
 				<Footer />

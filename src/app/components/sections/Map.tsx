@@ -10,7 +10,7 @@ export const Map = () => {
 	const [state, setState] = useState<number>(0)
 
 	return (
-		<section className='mb-24'>
+		<section id='contacts' className='mb-24'>
 			<Container>
 				<Title>Где мы Находимся?</Title>
 				<Fluid className='lg:flex justify-between '>

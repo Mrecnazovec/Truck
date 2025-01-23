@@ -1,8 +1,8 @@
 import Link from 'next/link'
 
-export const Logo = () => {
+export const Logo = ({...props}) => {
 	return (
-		<Link href='/' className='hover:opacity-70 transition-all'>
+		<Link {...props} href='/' className='hover:opacity-70 transition-all'>
 			<h2 className='font-black '>Циркон</h2>
 		</Link>
 	)
