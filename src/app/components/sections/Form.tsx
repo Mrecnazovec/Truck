@@ -82,14 +82,14 @@ export const Form = () => {
 					</div>
 					<div className='w-full flex flex-col'>
 						<div className='flex sm:flex-row flex-col gap-6 mb-6'>
-							<Input name='fullName' placeholder='Имя*' type='text' onChange={handleChange} value={formData.fullName} required />
+							<Input name='fullName' placeholder='Имя*' type='text' onChange={handleChange} value={formData.fullName}  />
 							<Input name='email' placeholder='Email' type='email' onChange={handleChange} value={formData.email} />
 						</div>
-						<Input name='phone' placeholder='Номер телефона*' type='tel' className='mb-6' onChange={handleChange} value={formData.phone} required />
+						<Input name='phone' placeholder='Номер телефона*' type='tel' className='mb-6' onChange={handleChange} value={formData.phone}  />
 						<Textarea name='message' placeholder='Сообщение' className='mb-7 resize-none h-40' onChange={handleChange} value={formData.message} />
 
 						<div>
-							<Checkbox name='privacy' text='Я согласен(а) на отправку и обработку личных данных' className='mb-6' required />
+							<Checkbox name='privacy' text='Я согласен(а) на отправку и обработку личных данных' className='mb-6'  />
 						</div>
 
 						<button
