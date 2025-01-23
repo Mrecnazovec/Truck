@@ -3,6 +3,7 @@ import './globals.scss'
 import Navbar from './components/Navbar'
 import { Footer } from './components/Footer'
 import NextTopLoader from 'nextjs-toploader'
+import SmoothScroll from './lib/SmoothScroll'
 
 export const metadata: Metadata = {
 	title: 'Циркон',
@@ -14,7 +15,7 @@ export default function RootLayout({
 	children: React.ReactNode
 }>) {
 	return (
-		<html className='overflow-x-hidden' lang='ru'>
+		<html className='overflow-x-hidden scroll-smooth' lang='ru'>
 			<body className='pb-14 overflow-x-hidden min-h-screen flex flex-col'>
 				<NextTopLoader
 					color='#fff'
@@ -28,7 +29,7 @@ export default function RootLayout({
 					shadow='0 0 10px #2299DD,0 0 5px #2299DD'
 				/>
 				<Navbar />
-				{children}
+				<SmoothScroll>{children}</SmoothScroll>
 				<Footer />
 			</body>
 		</html>
