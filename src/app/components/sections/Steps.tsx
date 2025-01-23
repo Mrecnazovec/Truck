@@ -16,7 +16,7 @@ export default function Steps() {
 							</div>
 							<h2 className='mb-2 h4 font-bold'>Общение</h2>
 							<p className='font-light'>Находим способы решить ваш вопрос по перевозке вашего груза</p>
-							<div className='absolute top-5 md:left-11 left-8 w-full h-[2px] bg-white'></div>
+							<div className='absolute top-5 md:left-11 left-[2.5rem] w-full h-[2px] bg-white'></div>
 						</div>
 						<div className='md:w-1/4 relative'>
 							<div className='w-10 h-10 flex items-center justify-center border-2 border-white rounded-full bg-white text-black font-bold mb-2'>
@@ -32,7 +32,7 @@ export default function Steps() {
 							</div>
 							<h2 className='mb-2 h4 font-bold'>Договор</h2>
 							<p className='font-light'>Подписываем двусторонний договор для безопасной перевозки вашего груза</p>
-							<div className='absolute top-5 md:left-11 left-8 w-full h-[2px] bg-white'></div>
+							<div className='absolute top-5 md:left-11 left-[2.5rem] w-full h-[2px] bg-white'></div>
 						</div>
 						<div className='md:w-1/4 relative'>
 							<div className='w-10 h-10 flex items-center justify-center border-2 border-white rounded-full bg-white text-black font-bold mb-2'>
