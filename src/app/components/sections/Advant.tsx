@@ -11,12 +11,14 @@ export const Advant = () => {
 			frontDesk: 'Десятилетия опыта в негабаритных перевозках',
 			childrenBack: 'Мы — профессионалы с многолетним опытом, которые точно знают, как справиться с любыми задачами',
 			imageSrc: '/svg/Capa_1.svg',
+			aos:'fade-up-left'
 		},
 		{
 			childrenFront: 'Работа 24/7',
 			frontDesk: 'Команда экспертов, готовая работать круглосуточно',
 			childrenBack: 'Наша команда — это не просто специалисты, а настоящие мастера своего дела, которые готовы работать в любое время дня и ночи',
 			imageSrc: '/svg/Capa_2.svg',
+			aos:'fade-up'
 		},
 		{
 			childrenFront: 'Индивидуальный подход',
@@ -24,12 +26,14 @@ export const Advant = () => {
 			childrenBack:
 				'Мы создаём индивидуальные маршруты, которые учитывают все особенности вашего груза и обеспечивают его безопасную и своевременную доставку',
 			imageSrc: '/svg/Capa_3.svg',
+			aos:'fade-up-right'
 		},
 		{
 			childrenFront: 'Безопасность',
 			frontDesk: 'Современные технологии и контроль на всех этапах',
 			childrenBack: 'Мы используем самые передовые технологии и системы контроля, чтобы гарантировать безопасность вашего груза на каждом этапе пути',
 			imageSrc: '/svg/Capa_4.svg',
+			aos:'fade-down-left'
 		},
 		{
 			childrenFront: 'Широкий спектр услуг',
@@ -37,6 +41,7 @@ export const Advant = () => {
 			childrenBack:
 				'Мы предоставляем услуги перевозки "под ключ" — от погрузки до выгрузки, включая мультимодальные маршруты для оптимизации времени и ресурсов',
 			imageSrc: '/svg/Capa_5.svg',
+			aos:'fade-down'
 		},
 		{
 			childrenFront: 'Репутация и доверие',
@@ -44,6 +49,7 @@ export const Advant = () => {
 			childrenBack:
 				'Мы гордимся репутацией и доверительными отношениями с партнёрами, которые уже много лет доверяют нам свои грузы',
 			imageSrc: '/svg/Capa_6.svg',
+			aos:'fade-down-right'
 		},
 	]
 
@@ -57,6 +63,7 @@ export const Advant = () => {
 							key={index}
 							imageSrc={item.imageSrc}
 							altText={item.childrenFront}
+							data-aos={item.aos}
 							childrenFront={
 								<>
 									<p className='h4 font-bold text-center'>{item.childrenFront}</p>
