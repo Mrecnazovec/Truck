@@ -10,6 +10,7 @@ import Steps from './components/sections/Steps'
 import Marquee from './components/Marquee'
 import { Promo } from './components/sections/Promo'
 import { Form } from './components/sections/Form'
+import { Map } from './components/sections/Map'
 
 export default function Home() {
 	return (
@@ -35,11 +36,11 @@ export default function Home() {
 					<Title>Наши проекты</Title>
 					<Fluid>
 						<Image width={1920} height={1920} alt='Грузовик' src='/jpg/gruz.jpg' className='w-full h-auto mb-7 rounded-2xl'></Image>
-						<h2 className='mb-7'>Перевозка крана Mammoet</h2>
-						<h3 className='mb-7 font-light'>
+						<h2 className='mb-7'>Видео</h2>
+						{/* <h3 className='mb-7 font-light'>
 							Международная перевозка крана осуществлялась из Села - Бадамша (Казахстан), в город Санкт-Петербург (Россия)
 						</h3>
-						<h3 className='font-light'>Расстояние: 2540км</h3>
+						<h3 className='font-light'>Расстояние: 2540км</h3> */}
 					</Fluid>
 				</Container>
 			</section>
@@ -49,10 +50,15 @@ export default function Home() {
 				<Container>
 					<Title>Наши партнёры</Title>
 				</Container>
-				<Marquee/>
+				<Marquee />
 			</section>
-			<Promo title='Мы профессионалы в сфере транспортировки негабаритных грузов!' desc='Заполните заявку, и наш менеджер свяжется с вами в кратчайшие сроки.' imgSrc='/svg/promo-bg-1.svg'></Promo>
-			<Form/>
+			<Promo
+				title='Мы профессионалы в сфере транспортировки негабаритных грузов!'
+				desc='Заполните заявку, и наш менеджер свяжется с вами в кратчайшие сроки.'
+				imgSrc='/svg/promo-bg-1.svg'
+			></Promo>
+			<Form />
+			<Map />
 		</main>
 	)
 }
