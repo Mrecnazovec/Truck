@@ -13,7 +13,7 @@ interface PromoProps {
 export const Promo: React.FC<PromoProps> = ({ title, desc, imgSrc }) => {
 	return (
 		<AOSComponent>
-			<Container data-aos='fade-up' className='bg-gradient-to-r from-white sm:to-black to-white py-6 md:py-14 rounded-2xl relative mb-24'>
+			<Container data-aos='fade-up' className='bg-gradient-to-r from-white sm:to-black to-white py-6 md:py-14 rounded-2xl relative mb-14'>
 				<Fluid>
 					<h2 className='h3 text-black font-black sm:max-w-[60%]'>{title}</h2>
 					<p className='text-black font-black sm:max-w-96'>{desc}</p>
