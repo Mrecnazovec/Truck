@@ -23,8 +23,8 @@ export const Map: React.FC<MapInterface> = ({ title }) => {
 						<div className='flex flex-col sm:flex-row lg:flex-wrap lg:gap-6'>
 							<div
 								onClick={() => setState(0)}
-								className={`w-full sm:w-1/2 lg:w-full lg:max-w-72 rounded-md cursor-pointer transition-all ${
-									state == 0 ? 'bg-secondary' : 'bg-transparent'
+								className={`w-full sm:w-1/2 lg:w-full lg:max-w-72 rounded-md cursor-pointer transition-all border-solid border-2 ${
+									state == 0 ? 'bg-secondary border-white' : 'bg-transparent  border-transparent'
 								}`}
 							>
 								<div className='p-7'>
@@ -68,8 +68,8 @@ export const Map: React.FC<MapInterface> = ({ title }) => {
 							</div>
 							<div
 								onClick={() => setState(1)}
-								className={`w-full sm:w-1/2 lg:w-full lg:max-w-72 rounded-md cursor-pointer transition-all ${
-									state == 1 ? 'bg-secondary' : 'bg-transparent'
+								className={`w-full sm:w-1/2 lg:w-full lg:max-w-72 rounded-md cursor-pointer transition-all border-solid border-2 ${
+									state == 1 ? 'bg-secondary border-white' : 'bg-transparent border-transparent'
 								}`}
 							>
 								<div className='p-7'>
