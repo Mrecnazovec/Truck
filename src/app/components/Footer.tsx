@@ -12,7 +12,7 @@ export const Footer = () => {
 						<Logo />
 					</li>
 					<li className='flex gap-7'>
-						<Link className='hover:opacity-70' href='tel:+89274601996'>
+						<Link className='transition-all hover:opacity-70' href='tel:+89274601996'>
 							<svg width='50' height='50' viewBox='0 0 50 51' fill='none' xmlns='http://www.w3.org/2000/svg'>
 								<path
 									fillRule='evenodd'
@@ -22,7 +22,7 @@ export const Footer = () => {
 								/>
 							</svg>
 						</Link>
-						<Link className='hover:opacity-70' href=''>
+						<Link className='transition-all hover:opacity-70' href=''>
 							<svg width='50' height='50' viewBox='0 0 50 51' fill='none' xmlns='http://www.w3.org/2000/svg'>
 								<path
 									fillRule='evenodd'
@@ -32,7 +32,7 @@ export const Footer = () => {
 								/>
 							</svg>
 						</Link>
-						<Link className='hover:opacity-70' href=''>
+						<Link className='transition-all hover:opacity-70' href=''>
 							<svg width='50' height='50' viewBox='0 0 50 51' fill='none' xmlns='http://www.w3.org/2000/svg'>
 								<path
 									fillRule='evenodd'
