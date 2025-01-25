@@ -7,7 +7,7 @@ import React from 'react'
 const Rigging = () => {
 	return (
 		<main className='flex-1 pt-24'>
-			<Promo title='Услуги / Такелажные работы' imgSrc='/svg/truck.svg' />
+			<Promo title='Такелажные работы' imgSrc='/svg/truck.svg' />
 			<Service
 				className='mb-24'
 				notTitled={true}

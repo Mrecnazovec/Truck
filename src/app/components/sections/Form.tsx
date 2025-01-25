@@ -28,7 +28,7 @@ export const Form = () => {
 	const [error, setError] = useState<string>('')
 	const [isPending, setIsPending] = useState<boolean>(false)
 
-	const message = `Новый заказ:\nИмя: ${formData.fullName}\nНомер телефона: ${formData.phone}\nПочта: ${formData.email}\nДлина: ${formData.length}\nШирина: ${formData.width}\nВысота: ${formData.height}\nВес: ${formData.weight}\nСообщение: ${formData.message}`
+	const message = `Новый заказ:\nИмя: ${formData.fullName}\nНомер телефона: ${formData.phone}\nПочта: ${formData.email}\nДлина: ${formData.length} см\nШирина: ${formData.width} см\nВысота: ${formData.height} см\nВес: ${formData.weight} кг\nСообщение: ${formData.message}`
 
 	const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | any>) => {
 		const { name, value, type, checked } = e.target
@@ -111,16 +111,10 @@ export const Form = () => {
 				<Fluid>
 					<form onSubmit={handleSubmit} className='flex w-full justify-between gap-6 lg:flex-row flex-col'>
 						<div className='w-full'>
-							<Range
-								name='length'
-								text='Длина груза (м)'
-								min={0}
-								max={60}
-								onChange={handleRangeChange} // Передаем обработчик изменений
-							/>
-							<Range name='width' text='Ширина груза (м)' min={0} max={10} onChange={handleRangeChange} />
-							<Range name='height' text='Высота груза (м)' min={0} max={10} onChange={handleRangeChange} />
-							<Range name='weight' text='Масса груза (т)' min={0} max={150} onChange={handleRangeChange} />
+							<Range name='length' text='Длина груза (см)' min={0} max={6000} onChange={handleRangeChange} />
+							<Range name='width' text='Ширина груза (см)' min={0} max={1000} onChange={handleRangeChange} />
+							<Range name='height' text='Высота груза (см)' min={0} max={1000} onChange={handleRangeChange} />
+							<Range name='weight' text='Масса груза (кг)' min={0} max={15000} onChange={handleRangeChange} />
 						</div>
 						<div className='w-full flex flex-col'>
 							<div className='flex sm:flex-row flex-col gap-6 mb-6'>

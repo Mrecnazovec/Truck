@@ -55,8 +55,8 @@ export const Range: React.FC<RangeProps> = ({ text, min, max, name, onChange, ..
 				max={max}
 				value={value || min} // Убедитесь, что value всегда корректное
 				name='range'
-				step='1'
-				onChange={(e) => handleChange(e as ChangeEvent<HTMLInputElement>)} // Обработчик для слайдера
+				step='50'
+				onChange={(e) => handleChange(e as ChangeEvent<HTMLInputElement>)}
 				className='w-full'
 			/>
 

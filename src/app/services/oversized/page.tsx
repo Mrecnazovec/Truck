@@ -7,7 +7,7 @@ import React from 'react'
 const Oversized = () => {
 	return (
 		<main className='flex-1 pt-24'>
-			<Promo title='Услуги / Перевозка Тяжелых и Негабаритных Грузов' imgSrc='/svg/truck.svg' />
+			<Promo title='Перевозка Тяжелых и Негабаритных Грузов' imgSrc='/svg/truck.svg' />
 			<Service
 				className='mb-24'
 				notTitled={true}

@@ -20,7 +20,7 @@ export const Map: React.FC<MapInterface> = ({ title }) => {
 				<Container data-aos='fade-up'>
 					<Title>{title}</Title>
 					<Fluid className='lg:flex justify-between '>
-						<div className='flex flex-col sm:flex-row lg:flex-wrap lg:gap-6'>
+						<div className='flex flex-col sm:flex-row lg:flex-wrap lg:gap-6 mb-3 sm:mb-0'>
 							<div
 								onClick={() => setState(0)}
 								className={`w-full sm:w-1/2 lg:w-full lg:max-w-72 rounded-md cursor-pointer transition-all border-solid border-2 ${
@@ -37,7 +37,7 @@ export const Map: React.FC<MapInterface> = ({ title }) => {
 												fill='white'
 											/>
 										</svg>
-										<p>Россия, Москва, Улица .</p>
+										<p>Москва, ул.Селезневская, д.22, помещение 4/т</p>
 									</div>
 									<Link href='mailto:info@info.ru' className='flex items-center gap-3 mb-7 hover:opacity-70 transition-all'>
 										<svg width='18' height='16' viewBox='0 0 18 16' fill='none' xmlns='http://www.w3.org/2000/svg'>
@@ -56,11 +56,11 @@ export const Map: React.FC<MapInterface> = ({ title }) => {
 											/>
 										</svg>
 										<div>
-											<Link href='tel:+78431234567' className='block hover:opacity-70 transition-all'>
-												+7 (843) 123-45-67
+											<Link href='tel:+89274601996' className='block hover:opacity-70 transition-all'>
+												+8 (927) 460-19-96
 											</Link>
-											<Link href='tel:+78431234567' className='block hover:opacity-70 transition-all'>
-												+7 (843) 123-45-67
+											<Link href='tel:+89870007511' className='block hover:opacity-70 transition-all'>
+												+8 (987) 000-75-11
 											</Link>
 										</div>
 									</div>
@@ -82,7 +82,7 @@ export const Map: React.FC<MapInterface> = ({ title }) => {
 												fill='white'
 											/>
 										</svg>
-										<p>Россия, Москва, Улица .</p>
+										<p>Казань, ул. Владимира Кулагина, д.9 оф. 5</p>
 									</div>
 									<Link href='mailto:info@info.ru' className='flex items-center gap-3 mb-7 hover:opacity-70 transition-all'>
 										<svg width='18' height='16' viewBox='0 0 18 16' fill='none' xmlns='http://www.w3.org/2000/svg'>
@@ -101,11 +101,11 @@ export const Map: React.FC<MapInterface> = ({ title }) => {
 											/>
 										</svg>
 										<div>
-											<Link href='tel:+78431234567' className='block hover:opacity-70 transition-all'>
-												+7 (843) 123-45-67
+											<Link href='tel:+89274601996' className='block hover:opacity-70 transition-all'>
+												+8 (927) 460-19-96
 											</Link>
-											<Link href='tel:+78431234567' className='block hover:opacity-70 transition-all'>
-												+7 (843) 123-45-67
+											<Link href='tel:+89870007511' className='block hover:opacity-70 transition-all'>
+												+8 (987) 000-75-11
 											</Link>
 										</div>
 									</div>
@@ -115,7 +115,7 @@ export const Map: React.FC<MapInterface> = ({ title }) => {
 						<div className='w-full h-80 lg:h-auto rounded-2xl relative overflow-hidden hidden sm:block'>
 							{state == 0 ? (
 								<iframe
-									src='https://yandex.uz/map-widget/v1/?ll=37.869222%2C55.744575&z=9.58'
+									src='https://yandex.uz/map-widget/v1/?ll=37.607699%2C55.780436&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjczODEwMRJD0KDQvtGB0YHQuNGPLCDQnNC-0YHQutCy0LAsINCh0LXQu9C10LfQvdGR0LLRgdC60LDRjyDRg9C70LjRhtCwLCAyMiIKDfptFkIVMx9fQg%2C%2C&z=18'
 									width='100%'
 									height='100%'
 									style={{ border: 0 }}
@@ -124,7 +124,7 @@ export const Map: React.FC<MapInterface> = ({ title }) => {
 								></iframe>
 							) : (
 								<iframe
-									src='https://yandex.uz/map-widget/v1/?ll=49.099982%2C55.767306&z=9.58'
+									src='https://yandex.uz/map-widget/v1/?ll=49.135799%2C55.742444&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgoxNjE0MzI2Mzc5EosB0KDQvtGB0YHQuNGPLCDQoNC10YHQv9GD0LHQu9C40LrQsCDQotCw0YLQsNGA0YHRgtCw0L0gKNCi0LDRgtCw0YDRgdGC0LDQvSksINCa0LDQt9Cw0L3RjCwg0YPQu9C40YbQsCDQktC70LDQtNC40LzQuNGA0LAg0JrRg9C70LDQs9C40L3QsCwgOSIKDdqKREIVYPheQg%2C%2C&z=18'
 									width='100%'
 									height='100%'
 									style={{ border: 0 }}
