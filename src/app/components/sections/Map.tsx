@@ -1,11 +1,11 @@
 'use client'
 
+import AOSComponent from '@/app/lib/aos'
+import Link from 'next/link'
 import React, { useState } from 'react'
 import { Container } from '../ui/Container'
-import { Title } from '../ui/Title'
 import { Fluid } from '../ui/Fluid'
-import Link from 'next/link'
-import AOSComponent from '@/app/lib/aos'
+import { Title } from '../ui/Title'
 
 interface MapInterface {
 	title: string
@@ -138,7 +138,7 @@ export const Map: React.FC<MapInterface> = ({ title }) => {
 				<div data-aos='fade-up' className='w-full h-80 lg:h-auto relative overflow-hidden block sm:hidden'>
 					{state == 0 ? (
 						<iframe
-							src='https://yandex.uz/map-widget/v1/?ll=37.869222%2C55.744575&z=9.58'
+							src='https://yandex.uz/map-widget/v1/?ll=37.607699%2C55.780436&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjczODEwMRJD0KDQvtGB0YHQuNGPLCDQnNC-0YHQutCy0LAsINCh0LXQu9C10LfQvdGR0LLRgdC60LDRjyDRg9C70LjRhtCwLCAyMiIKDfptFkIVMx9fQg%2C%2C&z=18'
 							width='100%'
 							height='100%'
 							style={{ border: 0 }}
@@ -147,7 +147,7 @@ export const Map: React.FC<MapInterface> = ({ title }) => {
 						></iframe>
 					) : (
 						<iframe
-							src='https://yandex.uz/map-widget/v1/?ll=49.099982%2C55.767306&z=9.58'
+							src='https://yandex.uz/map-widget/v1/?ll=49.135799%2C55.742444&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgoxNjE0MzI2Mzc5EosB0KDQvtGB0YHQuNGPLCDQoNC10YHQv9GD0LHQu9C40LrQsCDQotCw0YLQsNGA0YHRgtCw0L0gKNCi0LDRgtCw0YDRgdGC0LDQvSksINCa0LDQt9Cw0L3RjCwg0YPQu9C40YbQsCDQktC70LDQtNC40LzQuNGA0LAg0JrRg9C70LDQs9C40L3QsCwgOSIKDdqKREIVYPheQg%2C%2C&z=18'
 							width='100%'
 							height='100%'
 							style={{ border: 0 }}
