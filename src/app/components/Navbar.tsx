@@ -34,7 +34,7 @@ const Navbar: React.FC = () => {
 	}, [])
 
 	return (
-		<div className={`${navbarColor} fixed left-1/2 transform -translate-x-1/2 py-3 transition-all duration-300 w-full z-10`}>
+		<div className={`${navbarColor} fixed left-1/2 transform -translate-x-1/2 py-5 transition-all duration-300 w-full z-10`}>
 			<Container>
 				<div
 					className={`absolute inset-0 w-full transform transition-transform duration-300 -z-10 ${
