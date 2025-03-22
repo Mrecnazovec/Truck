@@ -4,9 +4,12 @@ import Navbar from './components/Navbar'
 import { Footer } from './components/Footer'
 import NextTopLoader from 'nextjs-toploader'
 import SmoothScroll from './lib/SmoothScroll'
+import { SITE_DESCRIPTION, SITE_KEYWORDS, SITE_NAME } from '@/constants/seo.constants'
 
 export const metadata: Metadata = {
-	title: 'Циркон',
+	title: { absolute: SITE_NAME, template: `%s | ${SITE_NAME}` },
+	description: SITE_DESCRIPTION,
+	keywords: SITE_KEYWORDS,
 }
 
 export default function RootLayout({
